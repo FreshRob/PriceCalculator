@@ -8,7 +8,7 @@ using PriceCalculator.Dto;
 
 namespace PriceCalculator.BusinessLogic.Offers
 {
-    class BreadOffer : IOffer
+    public class BreadOffer : IOffer
     {
         public IList<ProductWithOffer> GetProductsWithOffersAttached(IEnumerable<Product> products)
         {

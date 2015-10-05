@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\Offers\BreadOffer.cs" />
+    <Compile Include="BusinessLogic\Offers\MilkOffer.cs" />
     <Compile Include="BusinessLogic\PriceCalculator.cs" />
     <Compile Include="Dto\Product.cs" />
     <Compile Include="Dto\ProductWithOffer.cs" />
