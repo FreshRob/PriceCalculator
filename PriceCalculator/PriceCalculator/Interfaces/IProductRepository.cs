@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PriceCalculator.Interfaces
 {
-    public interface IProductRepostory
+    public interface IProductRepository
     {
         List<Product> GetProducts();
     }

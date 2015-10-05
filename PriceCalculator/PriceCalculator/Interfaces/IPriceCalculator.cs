@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PriceCalculator.Interfaces
 {
-    public interface IPriceCalcuator
+    public interface IPriceCalculator
     {
         decimal GetPrice(IEnumerable<Product> products);
     }
