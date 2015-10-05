@@ -9,6 +9,6 @@ namespace PriceCalculator.Interfaces
 {
     public interface IOffer
     {
-        IList<ProductWithOffer> GetProductsWithOffersAttached(IEnumerable<Product> products);
+        IList<ProductWithOffer> GetProductsWithOffersAttached(IList<Product> products);
     }
 }

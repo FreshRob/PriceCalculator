@@ -10,7 +10,7 @@ namespace PriceCalculator.BusinessLogic.Offers
 {
     public class MilkOffer : IOffer
     {
-        public IList<ProductWithOffer> GetProductsWithOffersAttached(IEnumerable<Product> products)
+        public IList<ProductWithOffer> GetProductsWithOffersAttached(IList<Product> products)
         {
             throw new NotImplementedException();
         }

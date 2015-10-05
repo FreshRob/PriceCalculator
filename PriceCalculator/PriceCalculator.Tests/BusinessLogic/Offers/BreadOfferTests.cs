@@ -44,14 +44,13 @@ namespace PriceCalculator.Tests.BusinessLogic.Offers
                 }
             };
 
-
             //act
             var result = offer.GetProductsWithOffersAttached(products);
 
             //act
             Assert.AreEqual(result.Count, 3);
             Assert.AreEqual(result.Count(r => !r.OfferPrice.HasValue), 2);
-            Assert.AreEqual(result[2].OfferPrice.Value, 0.5);
+            Assert.AreEqual(result[2].OfferPrice.Value, products[2].Price /2);
         }
     }
 }

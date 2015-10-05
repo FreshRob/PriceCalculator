@@ -44,6 +44,7 @@
     <Compile Include="BusinessLogic\Offers\MilkOffer.cs" />
     <Compile Include="BusinessLogic\PriceCalculator.cs" />
     <Compile Include="Dto\Product.cs" />
+    <Compile Include="Dto\ProductId.cs" />
     <Compile Include="Dto\ProductWithOffer.cs" />
     <Compile Include="Infrastructure\ProductRepository.cs" />
     <Compile Include="Interfaces\IOffer.cs" />
