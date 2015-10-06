@@ -18,9 +18,9 @@ namespace PriceCalculator.BusinessLogic.Offers
                 Name = p.Name,
                 Price = p.Price
             }).ToList();
-            var milk =  products.Select(p => p.Id == (int)ProductId.Butter).Count() / 2;
+            var numberOfBreadTheOfferCanBeAppliedTo =  products.Select(p => p.Id == (int)ProductId.Butter).Count() / 2;
 
-            if(milk == 0)
+            if(numberOfBreadTheOfferCanBeAppliedTo == 0)
             {
                 return productOfferList;
             }
@@ -29,7 +29,7 @@ namespace PriceCalculator.BusinessLogic.Offers
             {
                 product.OfferPrice = product.Price / 2;
                 countBread++;
-                if (countBread == milk)
+                if (countBread == numberOfBreadTheOfferCanBeAppliedTo)
                 {
                     return productOfferList;
                 }

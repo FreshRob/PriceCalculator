@@ -12,7 +12,43 @@ namespace PriceCalculator.BusinessLogic.Offers
     {
         public IList<ProductWithOffer> GetProductsWithOffersAttached(IList<Product> products)
         {
-            throw new NotImplementedException();
+            var productOfferList = products.Select(p => new ProductWithOffer
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Price = p.Price
+            }).ToList();
+
+            const int numberOfMilkToGetTheOffer = 4;
+
+            var numberOfMilkTheOfferCanBeAppledTo = products.Select(p => p.Id == (int)ProductId.Milk).Count() / numberOfMilkToGetTheOffer;
+
+            if (numberOfMilkTheOfferCanBeAppledTo == 0)
+            {
+                return productOfferList;
+            }
+            var countMilkForOffer = 0;
+            var countMilkToIgnore = 0;
+            foreach (var product in productOfferList.Where(p => p.Id == (int)ProductId.Milk))
+            {
+                countMilkToIgnore++;
+
+                if (countMilkToIgnore != numberOfMilkToGetTheOffer)
+                {
+                    continue;
+                }
+
+                countMilkForOffer++;
+                product.OfferPrice = 0;
+                countMilkToIgnore = 0;
+
+
+                if (countMilkForOffer == numberOfMilkTheOfferCanBeAppledTo)
+                {
+                    return productOfferList;
+                }
+            }
+            return productOfferList;
         }
     }
 }
