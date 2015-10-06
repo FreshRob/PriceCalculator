@@ -6,3 +6,5 @@ C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Tests\bin\Debug\Pric
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Tests\obj\Debug\PriceCalculator.Tests.csprojResolveAssemblyReference.cache
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Tests\obj\Debug\PriceCalculator.Tests.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Tests\obj\Debug\PriceCalculator.Tests.pdb
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Tests\bin\Debug\Moq.dll
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Tests\bin\Debug\Moq.xml

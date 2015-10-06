@@ -9,6 +9,6 @@ namespace PriceCalculator.Interfaces
 {
     public interface IPriceCalculator
     {
-        decimal GetPrice(IEnumerable<Product> products);
+        decimal GetPrice(IEnumerable<BasketProduct> products);
     }
 }

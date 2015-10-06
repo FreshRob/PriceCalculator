@@ -22,22 +22,25 @@ namespace PriceCalculator.Tests.BusinessLogic.Offers
         public void GetProductsWithOffersAttached_2Butters1Bread_Bread50PercentOff()
         {
             //rrange
-            var products = new List<Product>
+            var products = new List<BasketProduct>
             {
-                new Product
+                new BasketProduct
                 {
+                    BasketProductId = "1-1",
                     Id = 1,
                     Name = "Butter",
                     Price = 1
                 },
-                 new Product
+                 new BasketProduct
                 {
+                    BasketProductId = "1-1",
                     Id = 1,
                     Name = "Butter",
                     Price = 1
                 },
-                  new Product
+                  new BasketProduct
                 {
+                    BasketProductId = "1-1",
                     Id = 3,
                     Name = "Bread",
                     Price = 1
@@ -50,7 +53,7 @@ namespace PriceCalculator.Tests.BusinessLogic.Offers
             //act
             Assert.AreEqual(result.Count, 3);
             Assert.AreEqual(result.Count(r => !r.OfferPrice.HasValue), 2);
-            Assert.AreEqual(result[2].OfferPrice.Value, products[2].Price /2);
+            Assert.AreEqual(result[2].OfferPrice.Value, products[2].Price / 2);
         }
     }
 }

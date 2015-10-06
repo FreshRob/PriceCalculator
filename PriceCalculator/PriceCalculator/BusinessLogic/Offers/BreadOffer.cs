@@ -10,9 +10,9 @@ namespace PriceCalculator.BusinessLogic.Offers
 {
     public class BreadOffer : IOffer
     {
-        public IList<ProductWithOffer> GetProductsWithOffersAttached(IList<Product> products)
+        public IList<BasketProductWithOffer> GetProductsWithOffersAttached(IList<BasketProduct> products)
         {
-            var productOfferList = products.Select(p => new ProductWithOffer
+            var productOfferList = products.Select(p => new BasketProductWithOffer
             {
                 Id = p.Id,
                 Name = p.Name,

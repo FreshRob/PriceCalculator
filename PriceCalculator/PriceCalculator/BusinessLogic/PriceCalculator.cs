@@ -16,7 +16,7 @@ namespace PriceCalculator.BusinessLogic
             this.offers = offers;
         }
 
-        public decimal GetPrice(IEnumerable<Product> products)
+        public decimal GetPrice(IEnumerable<BasketProduct> products)
         {
             throw new NotImplementedException();
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PriceCalculator.Dto
 {
-    public class ProductWithOffer : Product
+    public class BasketProductWithOffer : BasketProduct
     {
         public decimal? OfferPrice { get; set; }
     }
