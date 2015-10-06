@@ -18,7 +18,18 @@ namespace PriceCalculator.BusinessLogic
 
         public decimal GetPrice(IEnumerable<BasketProduct> products)
         {
-            throw new NotImplementedException();
+            var productList = products.ToList();
+            var priceChanges = offers.SelectMany(o => o.GetProductsWithOffersAttached(productList)).Where(p=>p.OfferPrice.HasValue);
+
+            if (!priceChanges.Any())
+            {
+                return productList.Sum(p => p.Price);
+            }
+
+            return (from product in productList
+             join priceChange in priceChanges on product.BasketProductId equals priceChange.BasketProductId into tempForLeftJoin
+             from joinedArray in tempForLeftJoin.DefaultIfEmpty()
+             select joinedArray == null ? product.Price : joinedArray.OfferPrice.Value).Sum();           
         }
     }
 }

@@ -39,7 +39,7 @@ namespace PriceCalculator.Tests.BusinessLogic
             var result = priceCalculator.GetPrice(new List<BasketProduct> { productsInBacket });
 
             //assert
-            Assert.AreEqual(result, productsInBacket.Price);
+            Assert.AreEqual(productsInBacket.Price, result);
         }
 
         [TestMethod]
@@ -60,14 +60,14 @@ namespace PriceCalculator.Tests.BusinessLogic
 
             Offer1.Setup(o => o.GetProductsWithOffersAttached(It.IsAny<IList<BasketProduct>>())).Returns(new List<BasketProductWithOffer>
             {
-                
+               basketWithOffer
             });
 
             //act
             var result = priceCalculator.GetPrice(new List<BasketProduct> { productsInBacket });
 
             //assert
-            Assert.AreEqual(result, basketWithOffer);
+            Assert.AreEqual(basketWithOffer.OfferPrice, result);
         }
     }
 }
