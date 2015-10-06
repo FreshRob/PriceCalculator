@@ -7,7 +7,7 @@ namespace PriceCalculator.Web.Models
 {
     public class BasketItemViewModel
     {
-        public int Quanity { get; set; }
+        public int Quantity { get; set; }
         public int ProductId { get; set; }
     }
 }

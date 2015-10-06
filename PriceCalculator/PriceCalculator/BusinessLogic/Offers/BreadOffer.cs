@@ -14,6 +14,7 @@ namespace PriceCalculator.BusinessLogic.Offers
         {
             var productOfferList = products.Select(p => new BasketProductWithOffer
             {
+                BasketProductId = p.BasketProductId,
                 Id = p.Id,
                 Name = p.Name,
                 Price = p.Price

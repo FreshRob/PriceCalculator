@@ -10,7 +10,7 @@ namespace PriceCalculator.Web.Controllers
     {
         public ActionResult Index()
         {
-            return Content("");
+            return View();
         }
 
     }

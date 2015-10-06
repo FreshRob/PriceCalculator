@@ -32,7 +32,7 @@ namespace PriceCalculator.Web.Businesslogic
 
             foreach (var basketProduct in basketTotalViewModel.products)
             {
-                if (basketProduct.Quanity < 1)
+                if (basketProduct.Quantity < 1)
                 {
                     continue;
                 }
@@ -44,7 +44,7 @@ namespace PriceCalculator.Web.Businesslogic
                     continue;
                 }
 
-                for (var i = 0; i < basketProduct.Quanity; i++)
+                for (var i = 0; i < basketProduct.Quantity; i++)
                 {
                     basketItems.Add(new BasketProduct
                     {

@@ -66,7 +66,7 @@ namespace PriceCalculator.Web.Tests
                     new BasketItemViewModel
                     {
                         ProductId = 1,
-                        Quanity = 3
+                        Quantity = 3
                     }
                 }});
 

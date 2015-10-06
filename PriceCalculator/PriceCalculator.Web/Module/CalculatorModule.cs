@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using PriceCalculator.BusinessLogic.Offers;
+using PriceCalculator.Web.Businesslogic;
+using PriceCalculator.Web.Interfaces;
 
 namespace PriceCalculator.Web.Module
 {
@@ -18,6 +20,7 @@ namespace PriceCalculator.Web.Module
             Bind<IOffer>().To<BreadOffer>();
             Bind<IOffer>().To<MilkOffer>();
             Bind<IOfferRepository>().To<OfferRepository>();
+            Bind<IBasketManager>().To<BasketManager>();
         }
     }
 }
