@@ -17,6 +17,7 @@ namespace PriceCalculator.Web.Module
             Bind<IPriceCalculator>().To<PriceCalculator.BusinessLogic.PriceCalculator>();
             Bind<IOffer>().To<BreadOffer>();
             Bind<IOffer>().To<MilkOffer>();
+            Bind<IOfferRepository>().To<OfferRepository>();
         }
     }
 }

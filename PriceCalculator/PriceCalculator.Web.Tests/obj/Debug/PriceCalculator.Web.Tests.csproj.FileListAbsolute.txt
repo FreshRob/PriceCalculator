@@ -1,4 +1,3 @@
-C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\obj\Debug\PriceCalculator.Web.Tests.csprojResolveAssemblyReference.cache
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\roslyn\csc.exe
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -16,7 +15,9 @@ C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\PriceCalculator.Web.Tests.pdb
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Moq.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\PriceCalculator.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\PriceCalculator.Web.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Helpers.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Mvc.dll
@@ -27,11 +28,12 @@ C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\WebActivatorEx.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Http.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Ninject.dll
-C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\PriceCalculator.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Ninject.Web.Common.dll
-C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Http.WebHost.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Http.WebHost.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\PriceCalculator.Web.pdb
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\PriceCalculator.pdb
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Moq.xml
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Helpers.xml
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Mvc.xml
@@ -41,11 +43,9 @@ C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Http.xml
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Ninject.xml
-C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\PriceCalculator.pdb
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Ninject.Web.Common.xml
-C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Http.WebHost.xml
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\obj\Debug\PriceCalculator.Web.Tests.csprojResolveAssemblyReference.cache
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\obj\Debug\PriceCalculator.Web.Tests.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\obj\Debug\PriceCalculator.Web.Tests.pdb
-C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Moq.dll
-C:\projects\PriceCalculator\PriceCalculator\PriceCalculator.Web.Tests\bin\Debug\Moq.xml

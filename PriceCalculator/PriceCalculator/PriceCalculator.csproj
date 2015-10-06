@@ -48,8 +48,10 @@
     <Compile Include="Dto\Product.cs" />
     <Compile Include="Dto\ProductId.cs" />
     <Compile Include="Dto\BasketProductWithOffer.cs" />
+    <Compile Include="Infrastructure\OfferRepository.cs" />
     <Compile Include="Infrastructure\ProductRepository.cs" />
     <Compile Include="Interfaces\IOffer.cs" />
+    <Compile Include="Interfaces\IOfferRepository.cs" />
     <Compile Include="Interfaces\IPriceCalculator.cs" />
     <Compile Include="Interfaces\IProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

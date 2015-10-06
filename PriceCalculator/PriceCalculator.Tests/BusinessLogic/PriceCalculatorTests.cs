@@ -15,12 +15,14 @@ namespace PriceCalculator.Tests.BusinessLogic
     public class PriceCalculatorTests
     {
         private IPriceCalculator priceCalculator;
-        private Mock<IOffer> Offer1;
+        private Mock<IOfferRepository> offerRepository;
+        private Mock<IOffer> offer1;
         [TestInitialize]
         public void Setup()
         {
-            Offer1 = new Mock<IOffer>();            
-            priceCalculator = new PriceCalculator.BusinessLogic.PriceCalculator(new List<IOffer> { Offer1.Object });
+            offer1 = new Mock<IOffer>();
+            offerRepository = new Mock<IOfferRepository>();
+            priceCalculator = new PriceCalculator.BusinessLogic.PriceCalculator(offerRepository.Object);
         }
 
         [TestMethod]
@@ -32,8 +34,10 @@ namespace PriceCalculator.Tests.BusinessLogic
                 BasketProductId = "1-1",
                 Price = 10
             };
-            
-            Offer1.Setup(o => o.GetProductsWithOffersAttached(It.IsAny<IList<BasketProduct>>())).Returns(new List<BasketProductWithOffer>());
+
+            offerRepository.Setup(o => o.GetOffers()).Returns(new List<IOffer> { offer1.Object });
+
+            offer1.Setup(o => o.GetProductsWithOffersAttached(It.IsAny<IList<BasketProduct>>())).Returns(new List<BasketProductWithOffer>());
 
             //act
             var result = priceCalculator.GetPrice(new List<BasketProduct> { productsInBacket });
@@ -58,7 +62,9 @@ namespace PriceCalculator.Tests.BusinessLogic
                 OfferPrice = 8
             };
 
-            Offer1.Setup(o => o.GetProductsWithOffersAttached(It.IsAny<IList<BasketProduct>>())).Returns(new List<BasketProductWithOffer>
+            offerRepository.Setup(o => o.GetOffers()).Returns(new List<IOffer> { offer1.Object });
+
+            offer1.Setup(o => o.GetProductsWithOffersAttached(It.IsAny<IList<BasketProduct>>())).Returns(new List<BasketProductWithOffer>
             {
                basketWithOffer
             });

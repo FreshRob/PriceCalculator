@@ -32,4 +32,7 @@
 *.dSYM/
 
 # .net
-*/packges/
+**/packages/*
+!**/packages/repositories.config
+**/obj/*
+**/bin/*

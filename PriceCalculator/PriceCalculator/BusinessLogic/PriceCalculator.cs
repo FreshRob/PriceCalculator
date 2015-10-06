@@ -10,16 +10,16 @@ namespace PriceCalculator.BusinessLogic
 {
     public class PriceCalculator : IPriceCalculator
     {
-        private IList<IOffer> offers;
-        public PriceCalculator(IList<IOffer> offers)
+        private IOfferRepository offerRepository;
+        public PriceCalculator(IOfferRepository offerRepository)
         {
-            this.offers = offers;
+            this.offerRepository = offerRepository;
         }
 
         public decimal GetPrice(IEnumerable<BasketProduct> products)
         {
             var productList = products.ToList();
-            var priceChanges = offers.SelectMany(o => o.GetProductsWithOffersAttached(productList)).Where(p=>p.OfferPrice.HasValue);
+            var priceChanges = offerRepository.GetOffers().SelectMany(o => o.GetProductsWithOffersAttached(productList)).Where(p=>p.OfferPrice.HasValue);
 
             if (!priceChanges.Any())
             {

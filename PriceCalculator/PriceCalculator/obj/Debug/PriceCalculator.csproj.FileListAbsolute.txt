@@ -1,5 +1,5 @@
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator\bin\Debug\PriceCalculator.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator\bin\Debug\PriceCalculator.pdb
-C:\projects\PriceCalculator\PriceCalculator\PriceCalculator\obj\Debug\PriceCalculator.csprojResolveAssemblyReference.cache
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator\obj\Debug\PriceCalculator.dll
 C:\projects\PriceCalculator\PriceCalculator\PriceCalculator\obj\Debug\PriceCalculator.pdb
+C:\projects\PriceCalculator\PriceCalculator\PriceCalculator\obj\Debug\PriceCalculator.csprojResolveAssemblyReference.cache
