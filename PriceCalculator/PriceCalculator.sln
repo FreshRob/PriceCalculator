@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceCalculator", "PriceCal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceCalculator.Tests", "PriceCalculator.Tests\PriceCalculator.Tests.csproj", "{90D1BF7E-54AE-496D-95CF-17E9D86FA94F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceCalculator.Web", "PriceCalculator.Web\PriceCalculator.Web.csproj", "{96FE8E1A-4B66-4FF2-AC93-30CB7394A3AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceCalculator.Web.Tests", "PriceCalculator.Web.Tests\PriceCalculator.Web.Tests.csproj", "{247347A5-780A-4D88-A0D5-7AFED3420430}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{90D1BF7E-54AE-496D-95CF-17E9D86FA94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D1BF7E-54AE-496D-95CF-17E9D86FA94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D1BF7E-54AE-496D-95CF-17E9D86FA94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96FE8E1A-4B66-4FF2-AC93-30CB7394A3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96FE8E1A-4B66-4FF2-AC93-30CB7394A3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96FE8E1A-4B66-4FF2-AC93-30CB7394A3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96FE8E1A-4B66-4FF2-AC93-30CB7394A3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247347A5-780A-4D88-A0D5-7AFED3420430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247347A5-780A-4D88-A0D5-7AFED3420430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247347A5-780A-4D88-A0D5-7AFED3420430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247347A5-780A-4D88-A0D5-7AFED3420430}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
