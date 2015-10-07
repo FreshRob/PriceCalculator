@@ -19,7 +19,8 @@ namespace PriceCalculator.BusinessLogic.Offers
                 Name = p.Name,
                 Price = p.Price
             }).ToList();
-            var numberOfBreadTheOfferCanBeAppliedTo =  products.Select(p => p.Id == (int)ProductId.Butter).Count() / 2;
+
+            var numberOfBreadTheOfferCanBeAppliedTo =  Math.Floor(products.Where(p => p.Id == (int)ProductId.Butter).Count() / 2.0);
 
             if(numberOfBreadTheOfferCanBeAppliedTo == 0)
             {

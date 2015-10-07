@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceCalculator.Web", "Pric
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceCalculator.Web.Tests", "PriceCalculator.Web.Tests\PriceCalculator.Web.Tests.csproj", "{247347A5-780A-4D88-A0D5-7AFED3420430}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceCalculator.Web.Tests.Integration", "PriceCalculator.Web.Tests.Integration\PriceCalculator.Web.Tests.Integration.csproj", "{6EBD2A69-73FA-4486-9BE9-EB74DAF79AF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{247347A5-780A-4D88-A0D5-7AFED3420430}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{247347A5-780A-4D88-A0D5-7AFED3420430}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{247347A5-780A-4D88-A0D5-7AFED3420430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBD2A69-73FA-4486-9BE9-EB74DAF79AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBD2A69-73FA-4486-9BE9-EB74DAF79AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBD2A69-73FA-4486-9BE9-EB74DAF79AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBD2A69-73FA-4486-9BE9-EB74DAF79AF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

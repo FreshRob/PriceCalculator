@@ -55,5 +55,36 @@ namespace PriceCalculator.Tests.BusinessLogic.Offers
             Assert.AreEqual(result.Count(r => !r.OfferPrice.HasValue), 2);
             Assert.AreEqual(result[2].OfferPrice.Value, products[2].Price / 2);
         }
+
+        [TestMethod]
+        public void GetProductsWithOffersAttached_1Butters1Bread_NoDiscount()
+        {
+            //rrange
+            var products = new List<BasketProduct>
+            {
+                new BasketProduct
+                {
+                    BasketProductId = "1-1",
+                    Id = 1,
+                    Name = "Butter",
+                    Price = 1
+                },
+                  new BasketProduct
+                {
+                    BasketProductId = "3-1",
+                    Id = 3,
+                    Name = "Bread",
+                    Price = 1
+                }
+            };
+
+            //act
+            var result = offer.GetProductsWithOffersAttached(products);
+
+            //act
+            Assert.AreEqual(2, result.Count);
+            Assert.AreEqual(2, result.Count(r => !r.OfferPrice.HasValue));
+            Assert.IsNull(result[1].OfferPrice);
+        }
     }
 }
